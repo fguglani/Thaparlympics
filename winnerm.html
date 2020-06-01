@@ -1,0 +1,682 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="description" content="">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <!-- The above 4 meta tags *must* come first in the head; any other head content must come *after* these tags -->
+
+    <!-- Title -->
+    <title>AdminPage-WinnerM</title>
+
+    <!-- Favicon -->
+    <link rel="icon" href="img/core-img/favicon.ico">
+
+    <!-- Core Stylesheet -->
+    <link rel="stylesheet" href="style.css">
+    <link href="/css/bootstrap.min.css" rel="stylesheet" id="bootstrap-css">
+    <script src="/js/bootstrap/bootstrap.min.js"></script>
+    <script src="/js/jquery-2.1.4.min.js"></script>
+
+<style media="screen">
+  body {
+  background: #ffffff;
+  color: #414141;
+  font: 400 17px/2em 'Source Sans Pro', sans-serif;
+}
+
+.select-box {
+  cursor: pointer;
+  position : absolute;
+  max-width:  600px;
+  max-height:100px;
+  width: 100%;
+}
+
+.select-box3 {
+  cursor: pointer;
+  position : absolute;
+  max-width:  250px;
+  max-height: 50px;
+  width: 100%;
+  background: #eef3f6;
+  color:rgb(248,248,248);
+  font-size:13px;
+  margin-right:130px;
+}
+
+.select,
+.label {
+  color: #414141;
+  display: block;
+  font: 400 17px/2em 'Source Sans Pro', sans-serif;
+}
+
+.select {
+  width: 100%;
+  position: absolute;
+  top: 0;
+  padding: 5px 0;
+  height: 50px;
+  opacity: 0;
+  -ms-filter: "progid:DXImageTransform.Microsoft.Alpha(Opacity=0)";
+  background: none transparent;
+  border: 0 none;
+  font-color:rgb(248,248,248);
+}
+.select-box1 {
+  background: #eef3f6;
+  font-color:rgb(248,248,248);
+  font-size:14px;
+}
+
+.label {
+  position: relative;
+  padding: 10px 10px;
+  cursor: pointer;
+
+}
+.open .label::after {
+   content: "▲";
+}
+.label::after {
+  content: "▼";
+  font-size: 13px;
+  position: absolute;
+  right: 0;
+  top: 0;
+  padding: 10px 15px;
+  border-left: 5px solid #fff;
+}
+</style>
+
+</head>
+
+<body>
+    <!-- ##### Preloader ##### -->
+    <div id="preloader">
+        <i class="circle-preloader"></i>
+    </div>
+
+    <!-- ##### Header Area Start ##### -->
+    <header class="header-area">
+        <!-- Navbar Area -->
+        <div class="fitness-main-menu">
+            <div class="classy-nav-container breakpoint-off">
+                <div class="container">
+                    <!-- Menu -->
+                    <nav class="classy-navbar justify-content-between" id="fitnessNav">
+
+                        <!-- Nav brand -->
+                        <a href="index.html" class="nav-brand"><img src="" alt=""></a>
+
+                        <!-- Navbar Toggler -->
+                        <div class="classy-navbar-toggler">
+                            <span class="navbarToggler"><span></span><span></span><span></span></span>
+                        </div>
+
+                        <!-- Menu -->
+                        <div class="classy-menu">
+
+                            <!-- close btn -->
+                            <div class="classycloseIcon">
+                                <div class="cross-wrap"><span class="top"></span><span class="bottom"></span></div>
+                            </div>
+
+                            <!-- Nav Start -->
+
+                            <div class="classynav">
+                              <ul>
+                                  <li><a href="admins.html">Athletic</a></li>
+                                  <li><a href="adminm.html">Non-Athletic</a></li>
+                                  <li><a href="winners.html">W-Athletic</a></li>
+                                  <li><a href="winnerm.html">W-NAthletic</a></li>
+                              </ul>
+
+                            <!-- Call Button -->
+                            <a href="signin.html" class="fitness-btn menu-btn ml-30">Time to Go..!!</a>
+                          <!-- Nav End -->
+                        </div>
+                    </nav>
+                </div>
+            </div>
+        </div>
+    </header>
+    <!-- ##### Header Area End ##### -->
+
+    <!-- ##### Breadcumb Area Start ##### -->
+    <div class="breadcumb-area bg-img bg-overlay" style="background-image: url(img/bg-img/breadcumb-2.jpg);">
+        <div class="bradcumbContent">
+            <div class="container">
+                <div class="row">
+                    <div class="col-12">
+                        <h2>Winner(Non-Athletic Events)</h2>
+                        <nav aria-label="breadcrumb">
+                            <ol class="breadcrumb">
+                                <li class="breadcrumb-item"><a href="">Let the party Begin..!</a></li>
+                            </ol>
+                        </nav>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- ##### Breadcumb Area End ##### -->
+
+    <!-- ##### Contact Area Start ##### -->
+    <section class="contact-area section-padding-100">
+        <div class="container">
+            <div class="row">
+                <div class="col-6">
+                    <div class="contact-content">
+                        <!-- Contact Form Area -->
+                        <div class="contact-form-area">
+
+                                  <div class="select-box form-group">
+                                    <label for="select-box1" class="label select-box1" style="color:rgb(128,128,128)"><span class="label-desc">&nbsp Non Athletic Events</span> </label>
+                                    <select id="select-box1" class="select" required>
+                                      <option value="Cricket">Cricket</option>
+                        							<option value="Football">Football</option>
+                        							<option value="Badminton">Badminton</option>
+                        							<option value="Lawn Tennis">Lawn Tennis</option>
+                        							<option value="Basket Ball">Basket Ball</option>
+                        							<option value="Table Tennis">Table Tennis</option>
+                                    </select>
+                                  </div>
+
+                                  <div class="select-box form-group">
+                                    <label for="select-box1" class="label select-box1" style="color:rgb(128,128,128)"><span class="label-desc">&nbsp Type(Singles/Doubles/Multiplayer)</span> </label>
+                                    <select id="select-box1" class="select" required>
+                                      <option value="Singles">Singles</option>
+                                      <option value="Doubles">Doubles</option>
+                                      <option value="Multiplayer">Multiplayer</option>
+                                    </select>
+                                  </div>
+
+                                    <div class="select-box form-group">
+                                      <label for="select-box1" class="label select-box1" style="color:rgb(128,128,128)"><span class="label-desc">&nbsp Type(Gender)</span> </label>
+                                       <select id="select-box1" class="select" required>
+                                        <option value="Men's">Men's</option>
+                          							<option value="Women's">Women's</option>
+                                        <option value="Mixed Doubles">Mixed Doubles</option>
+                                      </select>
+                                    </div>
+
+                                  <form action="#" method="post">
+                                  <div class="">
+                                    <h4>Match 1</h4>
+                                  </div>
+
+                                  <div class="row">
+                                    <div class="select-box form-group col">
+                                      <label for="select-box1" class="label select-box3" style="color:rgb(128,128,128)"><span class="label-desc">&nbsp Team1</span> </label>
+                                      <select id="select-box1" class="select" required>
+                                        <option value="Octane Boosters"> Octane Boosters</option>
+                                        <option value="Live Wires"> Live Wires </option>
+                                        <option value="Steel Heads"> Steel Heads </option>
+                                        <option value="Royal Falcons"> Royal Falcons </option>
+                                        <option value="The Invincibles"> The Invincibles </option>
+                                        <option value="Blazing Titans"> Blazing Titans </option>
+                                      </select>
+                                  </div>
+
+                                    <div class="select-box form-group col">
+                                    <label for="select-box1" class="label select-box3" style="color:rgb(128,128,128)"><span class="label-desc">&nbsp Team2</span> </label>
+                                    <select id="select-box1" class="select" required>
+                                      <option value="Octane Boosters"> Octane Boosters</option>
+                                      <option value="Live Wires"> Live Wires </option>
+                                      <option value="Steel Heads"> Steel Heads </option>
+                                      <option value="Royal Falcons"> Royal Falcons </option>
+                                      <option value="The Invincibles"> The Invincibles </option>
+                                      <option value="Blazing Titans"> Blazing Titans </option>
+                                    </select>
+                                  </div>
+                                </div>
+
+
+                                <div class="select-box form-group">
+                                <label for="select-box1" class="label select-box1" style="color:rgb(128,128,128)"><span class="label-desc">&nbsp Winner</span> </label>
+                                <select id="select-box1" class="select" required>
+                                  <option value="Octane Boosters"> Octane Boosters</option>
+                                  <option value="Live Wires"> Live Wires </option>
+                                  <option value="Steel Heads"> Steel Heads </option>
+                                  <option value="Royal Falcons"> Royal Falcons </option>
+                                  <option value="The Invincibles"> The Invincibles </option>
+                                  <option value="Blazing Titans"> Blazing Titans </option>
+                                </select>
+                              </div>
+
+                              <div class="">
+                                <h4>Match 2</h4>
+                              </div>
+
+                              <div class="row">
+                                <div class="select-box form-group col">
+                                  <label for="select-box1" class="label select-box3" style="color:rgb(128,128,128)"><span class="label-desc">&nbsp Team1</span> </label>
+                                  <select id="select-box1" class="select" required>
+                                    <option value="Octane Boosters"> Octane Boosters</option>
+                                    <option value="Live Wires"> Live Wires </option>
+                                    <option value="Steel Heads"> Steel Heads </option>
+                                    <option value="Royal Falcons"> Royal Falcons </option>
+                                    <option value="The Invincibles"> The Invincibles </option>
+                                    <option value="Blazing Titans"> Blazing Titans </option>
+                                  </select>
+                              </div>
+
+                                <div class="select-box form-group col">
+                                <label for="select-box1" class="label select-box3" style="color:rgb(128,128,128)"><span class="label-desc">&nbsp Team2</span> </label>
+                                <select id="select-box1" class="select" required>
+                                  <option value="Octane Boosters"> Octane Boosters</option>
+                                  <option value="Live Wires"> Live Wires </option>
+                                  <option value="Steel Heads"> Steel Heads </option>
+                                  <option value="Royal Falcons"> Royal Falcons </option>
+                                  <option value="The Invincibles"> The Invincibles </option>
+                                  <option value="Blazing Titans"> Blazing Titans </option>
+                                </select>
+                              </div>
+                            </div>
+
+
+                            <div class="select-box form-group">
+                            <label for="select-box1" class="label select-box1" style="color:rgb(128,128,128)"><span class="label-desc">&nbsp Winner</span> </label>
+                            <select id="select-box1" class="select" required>
+                              <option value="Octane Boosters"> Octane Boosters</option>
+                              <option value="Live Wires"> Live Wires </option>
+                              <option value="Steel Heads"> Steel Heads </option>
+                              <option value="Royal Falcons"> Royal Falcons </option>
+                              <option value="The Invincibles"> The Invincibles </option>
+                              <option value="Blazing Titans"> Blazing Titans </option>
+                            </select>
+                          </div>
+                            <button class="btn fitness-btn btn-2 mt-30" type="submit" style="margin-bottom:30px">KnockOuts Done</button>
+                        </form>
+
+                                      <form action="#" method="post">
+                                      <div class="">
+                                        <h4>Match 3(Semi-Final:1)</h4>
+                                      </div>
+
+                                      <div class="row">
+                                        <div class="select-box form-group col">
+                                          <label for="select-box1" class="label select-box3" style="color:rgb(128,128,128)"><span class="label-desc">&nbsp Team1</span> </label>
+                                          <select id="select-box1" class="select" required>
+                                            <option value="Octane Boosters"> Octane Boosters</option>
+                                            <option value="Live Wires"> Live Wires </option>
+                                            <option value="Steel Heads"> Steel Heads </option>
+                                            <option value="Royal Falcons"> Royal Falcons </option>
+                                            <option value="The Invincibles"> The Invincibles </option>
+                                            <option value="Blazing Titans"> Blazing Titans </option>
+                                          </select>
+                                      </div>
+
+                                        <div class="select-box form-group col">
+                                        <label for="select-box1" class="label select-box3" style="color:rgb(128,128,128)"><span class="label-desc">&nbsp Team2</span> </label>
+                                        <select id="select-box1" class="select" required>
+                                          <option value="Octane Boosters"> Octane Boosters</option>
+                                          <option value="Live Wires"> Live Wires </option>
+                                          <option value="Steel Heads"> Steel Heads </option>
+                                          <option value="Royal Falcons"> Royal Falcons </option>
+                                          <option value="The Invincibles"> The Invincibles </option>
+                                          <option value="Blazing Titans"> Blazing Titans </option>
+                                        </select>
+                                      </div>
+                                    </div>
+
+
+                                    <div class="select-box form-group">
+                                    <label for="select-box1" class="label select-box1" style="color:rgb(128,128,128)"><span class="label-desc">&nbsp Winner</span> </label>
+                                    <select id="select-box1" class="select" required>
+                                      <option value="Octane Boosters"> Octane Boosters</option>
+                                      <option value="Live Wires"> Live Wires </option>
+                                      <option value="Steel Heads"> Steel Heads </option>
+                                      <option value="Royal Falcons"> Royal Falcons </option>
+                                      <option value="The Invincibles"> The Invincibles </option>
+                                      <option value="Blazing Titans"> Blazing Titans </option>
+                                    </select>
+                                  </div>
+
+
+                                        <div class="">
+                                          <h4>Match 4(Semi-Final:2)</h4>
+                                        </div>
+
+                                        <div class="row">
+                                          <div class="select-box form-group col">
+                                            <label for="select-box1" class="label select-box3" style="color:rgb(128,128,128)"><span class="label-desc">&nbsp Team1</span> </label>
+                                            <select id="select-box1" class="select" required>
+                                              <option value="Octane Boosters"> Octane Boosters</option>
+                                              <option value="Live Wires"> Live Wires </option>
+                                              <option value="Steel Heads"> Steel Heads </option>
+                                              <option value="Royal Falcons"> Royal Falcons </option>
+                                              <option value="The Invincibles"> The Invincibles </option>
+                                              <option value="Blazing Titans"> Blazing Titans </option>
+                                            </select>
+                                        </div>
+
+                                          <div class="select-box form-group col">
+                                          <label for="select-box1" class="label select-box3" style="color:rgb(128,128,128)"><span class="label-desc">&nbsp Team2</span> </label>
+                                          <select id="select-box1" class="select" required>
+                                            <option value="Octane Boosters"> Octane Boosters</option>
+                                            <option value="Live Wires"> Live Wires </option>
+                                            <option value="Steel Heads"> Steel Heads </option>
+                                            <option value="Royal Falcons"> Royal Falcons </option>
+                                            <option value="The Invincibles"> The Invincibles </option>
+                                            <option value="Blazing Titans"> Blazing Titans </option>
+                                          </select>
+                                        </div>
+                                      </div>
+
+
+                                      <div class="select-box form-group">
+                                      <label for="select-box1" class="label select-box1" style="color:rgb(128,128,128)"><span class="label-desc">&nbsp Winner</span> </label>
+                                      <select id="select-box1" class="select" required>
+                                        <option value="Octane Boosters"> Octane Boosters</option>
+                                        <option value="Live Wires"> Live Wires </option>
+                                        <option value="Steel Heads"> Steel Heads </option>
+                                        <option value="Royal Falcons"> Royal Falcons </option>
+                                        <option value="The Invincibles"> The Invincibles </option>
+                                        <option value="Blazing Titans"> Blazing Titans </option>
+                                      </select>
+                                    </div>
+                                    <button class="btn fitness-btn btn-2 mt-30" type="submit" style="margin-bottom:30px">Let's Head to Finals</button>
+                                </form>
+
+                                          <form action="#" method="post">
+                                          <div class="">
+                                            <h4>Match 5(Third Place)</h4>
+                                          </div>
+
+                                          <div class="row">
+                                            <div class="select-box form-group col">
+                                              <label for="select-box1" class="label select-box3" style="color:rgb(128,128,128)"><span class="label-desc">&nbsp Team1</span> </label>
+                                              <select id="select-box1" class="select" required>
+                                                <option value="Octane Boosters"> Octane Boosters</option>
+                                                <option value="Live Wires"> Live Wires </option>
+                                                <option value="Steel Heads"> Steel Heads </option>
+                                                <option value="Royal Falcons"> Royal Falcons </option>
+                                                <option value="The Invincibles"> The Invincibles </option>
+                                                <option value="Blazing Titans"> Blazing Titans </option>
+                                              </select>
+                                          </div>
+
+                                            <div class="select-box form-group col">
+                                            <label for="select-box1" class="label select-box3" style="color:rgb(128,128,128)"><span class="label-desc">&nbsp Team2</span> </label>
+                                            <select id="select-box1" class="select" required>
+                                              <option value="Octane Boosters"> Octane Boosters</option>
+                                              <option value="Live Wires"> Live Wires </option>
+                                              <option value="Steel Heads"> Steel Heads </option>
+                                              <option value="Royal Falcons"> Royal Falcons </option>
+                                              <option value="The Invincibles"> The Invincibles </option>
+                                              <option value="Blazing Titans"> Blazing Titans </option>
+                                            </select>
+                                          </div>
+                                        </div>
+
+
+                                        <div class="select-box form-group">
+                                        <label for="select-box1" class="label select-box1" style="color:rgb(128,128,128)"><span class="label-desc">&nbsp Bronze Medalist</span> </label>
+                                        <select id="select-box1" class="select" required>
+                                          <option value="Octane Boosters"> Octane Boosters</option>
+                                          <option value="Live Wires"> Live Wires </option>
+                                          <option value="Steel Heads"> Steel Heads </option>
+                                          <option value="Royal Falcons"> Royal Falcons </option>
+                                          <option value="The Invincibles"> The Invincibles </option>
+                                          <option value="Blazing Titans"> Blazing Titans </option>
+                                        </select>
+                                      </div>
+
+                                      <div class="">
+                                        <h4>Match 6(Finals)</h4>
+                                      </div>
+
+                                      <div class="row">
+                                        <div class="select-box form-group col">
+                                          <label for="select-box1" class="label select-box3" style="color:rgb(128,128,128)"><span class="label-desc">&nbsp Team1</span> </label>
+                                          <select id="select-box1" class="select" required>
+                                            <option value="Octane Boosters"> Octane Boosters</option>
+                                            <option value="Live Wires"> Live Wires </option>
+                                            <option value="Steel Heads"> Steel Heads </option>
+                                            <option value="Royal Falcons"> Royal Falcons </option>
+                                            <option value="The Invincibles"> The Invincibles </option>
+                                            <option value="Blazing Titans"> Blazing Titans </option>
+                                          </select>
+                                      </div>
+
+                                        <div class="select-box form-group col">
+                                        <label for="select-box1" class="label select-box3" style="color:rgb(128,128,128)"><span class="label-desc">&nbsp Team2</span> </label>
+                                        <select id="select-box1" class="select" required>
+                                          <option value="Octane Boosters"> Octane Boosters</option>
+                                          <option value="Live Wires"> Live Wires </option>
+                                          <option value="Steel Heads"> Steel Heads </option>
+                                          <option value="Royal Falcons"> Royal Falcons </option>
+                                          <option value="The Invincibles"> The Invincibles </option>
+                                          <option value="Blazing Titans"> Blazing Titans </option>
+                                        </select>
+                                      </div>
+                                    </div>
+
+
+                                    <div class="select-box form-group">
+                                    <label for="select-box1" class="label select-box1" style="color:rgb(128,128,128)"><span class="label-desc">&nbsp Gold Medalist</span> </label>
+                                    <select id="select-box1" class="select" required>
+                                      <option value="Octane Boosters"> Octane Boosters</option>
+                                      <option value="Live Wires"> Live Wires </option>
+                                      <option value="Steel Heads"> Steel Heads </option>
+                                      <option value="Royal Falcons"> Royal Falcons </option>
+                                      <option value="The Invincibles"> The Invincibles </option>
+                                      <option value="Blazing Titans"> Blazing Titans </option>
+                                    </select>
+                                  </div>
+
+                                  <div class="select-box form-group">
+                                  <label for="select-box1" class="label select-box1" style="color:rgb(128,128,128)"><span class="label-desc">&nbsp Silver Medalist</span> </label>
+                                  <select id="select-box1" class="select" required>
+                                    <option value="Octane Boosters"> Octane Boosters</option>
+                                    <option value="Live Wires"> Live Wires </option>
+                                    <option value="Steel Heads"> Steel Heads </option>
+                                    <option value="Royal Falcons"> Royal Falcons </option>
+                                    <option value="The Invincibles"> The Invincibles </option>
+                                    <option value="Blazing Titans"> Blazing Titans </option>
+                                  </select>
+                                </div>
+
+
+                                <button class="btn fitness-btn btn-2 mt-30" type="submit">Congo</button>
+                            </form>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <!-- ##### Sign In End ##### -->
+
+   <!-- ##### Footer Area Start ##### -->
+    <footer class="footer-area section-padding-100-0 bg-img bg-overlay" style="background-image: url(img/bg-img/bg-16.jpg);">
+
+        <div class="main-footer-area">
+            <div class="container">
+                <div class="row">
+
+                    <!-- Footer Widget Area -->
+                    <div class="col-12 col-sm-6 col-lg-3">
+                        <div class="footer-widget-area mb-50">
+                            <!-- Widget Title -->
+                            <div class="widget-title">
+                                <a href="#"><img src="img/core-img/logo.png" alt=""></a>
+                            </div>
+                            <p class="mb-30">"Never say never because limits,like fears,are often just illusions."</p>
+                            <!-- Social Info -->
+                            <div class="footer-social-info">
+
+                                <a href="https://www.facebook.com/thaparlympics18/ " target="_blank"><i class="fa fa-facebook" aria-hidden="true"></i></a>
+
+                                <a href="https://www.instagram.com/thaparlympics2k19/" target="_blank"><i class="fa fa-instagram" aria-hidden="true"></i></a>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Footer Widget Area -->
+                    <div class="col-12 col-sm-6 col-lg-3">
+                        <div class="footer-widget-area mb-50">
+                            <!-- Widget Title -->
+                            <div class="widget-title">
+                                <h6>Famous Quotes</h6>
+                            </div>
+
+                            <!-- Testimonials Slides -->
+                            <div class="testimonials-slides owl-carousel">
+
+                                <div class="single-slide">
+                                    <!-- Single Testimonial -->
+                                    <div class="single-testimonial">
+
+                                      <p>You walk on the field as a player, you walk out of the field as a legend.</p>
+                                        <span>Harshdeep Singh</span>
+                                    </div>
+                                    <!-- Single Testimonial -->
+                                    <div class="single-testimonial">
+                                        <p>"A champion is someone who gets up when he can't."</p>
+                                        <span>Jack Dempsey</span>
+                                    </div>
+                                </div>
+
+                                <div class="single-slide">
+                                    <!-- Single Testimonial -->
+                                    <div class="single-testimonial">
+                                        <p>"Sports do not build character.They reaveal it."</p>
+                                        <span>Heywood Broun</span>
+                                    </div>
+                                    <!-- Single Testimonial -->
+                                    <div class="single-testimonial">
+                                        <p>"Champions aren't made in the gyms.Champions are made from something they have deep inside them-a desire,a dream,a vision."</p>
+                                        <span>Muhammad Ali</span>
+                                    </div>
+                                </div>
+
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Footer Widget Area -->
+                    <div class="col-12 col-sm-6 col-lg-3">
+                        <div class="footer-widget-area mb-50">
+                            <div class="widget-title">
+                                <h6>Events</h6>
+                            </div>
+
+                            <nav>
+                                <ul class="fitness-classes">
+                                    <li><a href="#">Cricket</a></li>
+                                    <li><a href="#">Football</a></li>
+                                    <li><a href="#">Badminton</a></li>
+                                    <li><a href="#">Athletics</a></li>
+                                    <li><a href="#">Basketball</a></li>
+                                    <li><a href="#">Volleyball</a></li>
+                                    <li><a href="#">Table tennis</a></li>
+                                    <li><a href="#">Lawn Tennis</a></li>
+                                </ul>
+                            </nav>
+                        </div>
+                    </div>
+
+                    <!-- Footer Widget Area -->
+                    <div class="col-12 col-sm-6 col-lg-3">
+                        <div class="footer-widget-area mb-50">
+                            <div class="widget-title">
+                                <h6>Contact</h6>
+                            </div>
+
+                            <!-- Single Contact -->
+                            <div class="single-contact mb-30">
+                                <span>Address:</span>
+                                <p>Thapar Institute of Engineering and Technology<br>Patiala, Punjab 147004</p>
+                            </div>
+
+                            <!-- Single Contact -->
+                            <div class="single-contact mb-30">
+                                <span>Phone:</span>
+                                <p>+91 94636 27586</p>
+                            </div>
+
+                            <!-- Single Contact -->
+
+                        </div>
+                    </div>
+
+                </div>
+            </div>
+        </div>
+
+        <!-- Copywrite Area -->
+        <div class="bottom-footer-area">
+            <div class="container">
+                <div class="row">
+                    <div class="col-12">
+
+                    </div>
+                </div>
+            </div>
+        </div>
+    </footer>
+    <!-- ##### Footer Area Start ##### -->
+
+    <!-- ##### All Javascript Script ##### -->
+    <!-- jQuery-2.2.4 js -->
+    <script src="js/jquery/jquery-2.2.4.min.js"></script>
+    <!-- Popper js -->
+    <script src="js/bootstrap/popper.min.js"></script>
+    <!-- Bootstrap js -->
+    <script src="js/bootstrap/bootstrap.min.js"></script>
+    <!-- All Plugins js -->
+    <script src="js/plugins/plugins.js"></script>
+    <!-- Active js -->
+    <script src="js/active.js"></script>
+    <!-- Live Chat Code :: Start of Tawk.to Script -->
+    <script>
+        var Tawk_API = Tawk_API || {},
+            Tawk_LoadStart = new Date();
+        (function() {
+            var s1 = document.createElement("script"),
+                s0 = document.getElementsByTagName("script")[0];
+            s1.async = true;
+            s1.src = 'https://embed.tawk.to/5b55ea72df040c3e9e0bdf85/default';
+            s1.charset = 'UTF-8';
+            s1.setAttribute('crossorigin', '*');
+            s0.parentNode.insertBefore(s1, s0);
+        })();
+
+        $("select").on("click" , function() {
+
+          $(this).parent(".select-box").toggleClass("open");
+
+        });
+
+        $(document).mouseup(function (e)
+        {
+            var container = $(".select-box");
+
+            if (container.has(e.target).length === 0)
+            {
+                container.removeClass("open");
+            }
+        });
+
+
+        $("select").on("change" , function() {
+
+          var selection = $(this).find("option:selected").text(),
+              labelFor = $(this).attr("id"),
+              label = $("[for='" + labelFor + "']");
+
+          label.find(".label-desc").html(selection);
+
+        });
+
+    </script>
+    <!-- End of Tawk.to Script -->
+</body>
+
+</html>
